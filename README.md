@@ -19,3 +19,30 @@ Clone este repositório:
 
 ```bash
 git clone https://github.com/seu-usuario/bitcoin-wallet-generator.git
+
+##Instale as dependências do projeto:
+cd bitcoin-wallet-generator
+npm install
+
+##Execute o script para gerar a carteira:
+node createWallet.js
+
+##O terminal exibirá o endereço Bitcoin, a chave privada e a frase mnemônica (seed):
+Carteira gerada:
+Endereço: <seu-endereço-bitcoin>
+Chave privada: <sua-chave-privada>
+Seed: <sua-seed>
+
+##Estrutura do Projeto
+createWallet.js: Script principal que executa a geração da carteira.
+package.json: Contém as dependências do projeto e scripts de execução.
+
+##Considerações de Segurança
+Não compartilhe sua chave privada ou seed: Essas informações são confidenciais e permitem acesso total aos fundos da sua carteira.
+Use a rede de testes para experimentos: Este projeto usa a testnet por padrão. Se você deseja utilizar a rede principal, altere o código para usar bitcoin.networks.bitcoin, mas esteja ciente dos riscos.
+
+##Licença
+Este projeto é licenciado sob a MIT License.
+
+
+
